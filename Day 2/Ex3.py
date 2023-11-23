@@ -10,3 +10,45 @@ classes. Enjoy your meal!
 
 """
 
+class Meat:
+    def  __init__(self,amount,cookingtime):
+       self.amount = amount
+       self.cookingtime = cookingtime
+       
+    def cook(self):
+        while self.cookingtime > 0:
+            self.cookingtime = self.cookingtime - 1
+       
+       
+class Steak(Meat):
+    def __init__(self,cutgrade):
+        self.cutgrade = cutgrade
+        
+        
+class HotDog(Meat):
+    def __init__(self):
+        pass
+    
+    
+class Veggies:
+    def  __init__(self,amount,cookingtime):
+            self.amount = amount
+            self.cookingtime = cookingtime
+       
+    def cook(self):
+        while self.cookingtime > 0:
+            self.cookingtime = self.cookingtime - 1
+            
+class Carrots(Veggies):
+    def  __init__(self):
+        pass
+    
+class Tomatoes(Veggies):
+    def  __init__(self):
+        pass
+    
+class Peppers(Veggies):
+    def  __init__(self):
+        pass
+    
+    
